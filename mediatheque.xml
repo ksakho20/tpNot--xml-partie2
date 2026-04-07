@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mediatheque  [
+    <!ELEMENT mediatheque (livre+)>
+    <!ELEMENT livre (titre, auteur, annee, genre)>
+    <!ELEMENT titre (#PCDATA)>
+    <!ELEMENT auteur (#PCDATA)>
+    <!ELEMENT annee (#PCDATA)>
+    <!ELEMENT genre (#PCDATA)>
+    <!ATTLIST  livre id ID #REQUIRED>
+]>
+<mediatheque>
+    <xmlns:xsi="http://www.w3.org/2001.XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="mediatheque"/> </xmlns:xsi>
+    <livre id="L01">
+        <titre>Examen</titre>
+        <auteur>Joe</auteur>
+        <annee>2026</annee>
+        <genre>Roman</genre>
+    </livre>
+
+    <livre id="L02">
+        <titre>université</titre>
+        <auteur>Joe</auteur>
+        <annee>2027</annee>
+        <genre>BD</genre>
+    </livre>
+</mediatheque>

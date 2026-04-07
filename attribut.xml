@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE etudiant [
+    <!ELEMENT etudiant (nom, prenom, age, filiere)>
+    <!ELEMENT nom (#PCDATA)>
+    <!ELEMENT prenom (#PCDATA)>
+    <!ELEMENT age (#PCDATA)>
+    <!ELEMENT filiere (#PCDATA)>
+    <!ATTLIST etudiant id ID #REQUIRED>
+]>
+<etudiant id="E001">
+  <nom>cana</nom>
+  <prenom>joe</prenom>
+  <age>20</age>
+  <filiere>informatique</filiere>
+</etudiant>
